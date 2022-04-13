@@ -2,7 +2,7 @@ import community as community_louvain
 import networkx as nx
 
 #read file
-graph_file = 'abide4132_nc_el2.txt'
+graph_file = 'abide4132_nc_el1.txt'
 label_file='4132_regions.txt'
 
 with open(graph_file) as f:
@@ -64,7 +64,7 @@ for edge in graph:
 
 #write the result
 #coarsened_graph_file=open("coarsened_graph.txt","w")
-coarsened_graph_file=open("abide_nc_coarsened_graph2.txt","w")
+coarsened_graph_file=open("abide_nc_coarsened_graph1.txt","w")
 for edge in coarsened_graph:
     coarsened_graph_file.write(edge+'\n')
     
